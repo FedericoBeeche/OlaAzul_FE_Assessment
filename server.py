@@ -20,8 +20,8 @@ def serve_dir_directory_index():
         out = subprocess.Popen(['python3','app.py'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         stdout,stderr = out.communicate()
         return stdout if out.returncode == 0 else f"<pre style='color: red;'>{stdout.decode('utf-8')}</pre>"
-    if os.path.exists("index.html"):
-        return send_from_directory(static_file_dir, 'index.html')
+    if os.path.exists("front/index.html"):
+        return send_from_directory(static_file_dir, 'front/index.html')
     else:
         return "<h1 align='center'>404</h1><h2 align='center'>Missing index.html file</h2><p align='center'><img src='https://ucarecdn.com/3a0e7d8b-25f3-4e2f-add2-016064b04075/rigobaby.jpg' /></p>"
 
