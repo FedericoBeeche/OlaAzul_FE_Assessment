@@ -12,30 +12,40 @@
 
 <body>
     <!--main container-->
-    <div class="container"> 
-            <div class="d-flex row headerSection">
-                <h1 class="col-12 text-center font-weight-bold">Header</h1>
-                <p class="col-12 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima repellat odio cupiditate nam! Excepturi impedit optio, quae possimus ducimus quibusdam repudiandae obcaecati provident maiores harum quod quaerat nisi! Nesciunt, harum.</p>
-            </div>
-            <div class="d-flex row section1">
-                <h2 class="col-12 text-center font-weight-bold">Section 1</h2>
-                <p class="col-6 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio reiciendis impedit minus molestiae inventore mollitia, voluptas alias, sint porro error dignissimos? Porro molestias ab debitis doloribus possimus distinctio corrupti aliquam.</p>
-                <p class="col-6 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facere, cupiditate earum aliquam molestiae non eligendi numquam possimus consequatur, culpa voluptatibus eveniet dolorem, fuga praesentium eos corrupti corporis incidunt quas.</p>
-            </div>
-            <div>
-                <div>
-                    <h4 class="section2">Section 2</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ducimus. Id hic placeat nesciunt cumque nam molestias, reprehenderit eius neque?</p>
+    <div class="wrapper">
+        <!--Header and secton 1 container -- done with Bootstrap -->
+        <div class="container-fluid">
+            <div id="headerSection" class="d-flex justify-content-center row">
+                <div class="col-12">
+                    <h1 class="d-flex justify-content-center">Header</h1>
                 </div>
-                <div>
-                    <h4 class="section2">Section 2</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ducimus. Id hic placeat nesciunt cumque nam molestias, reprehenderit eius neque?</p>
+                <div class="col-6">
+                    <p class="d-flex text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim
+                        repellat necessitatibus voluptatibus unde, totam iste eaque voluptates iste lorum.</p>
                 </div>
-                <div>
-                    <h4 class="section2">Section 2</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ducimus. Id hic placeat nesciunt cumque nam molestias, reprehenderit eius neque?</p>
+                <div class="col-12 text-center">
+                        <button id="headerBtn" class="btn-dark">Read More</button>
                 </div>
             </div>
+            <div id="section1" class="d-flex justify-content-center row">
+                <div class="col-12">
+                    <h2 class="d-flex justify-content-center">Section 1</h2>
+                </div>
+                <div class="col-6">
+                    <p class="d-flex text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim
+                        repellat necessitatibus voluptatibus unde, totam iste eaque voluptates. Voluptatibus voluptatem
+                        perferendis fuga nihil ab pariatur odit, beatae obcaecati perspiciatis dignissimos corporis
+                        laborum sequi quos illum laudantium mollitia magni animi.</p>
+                </div>
+                <div class="col-6">
+                    <p class="d-flex text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim
+                        repellat necessitatibus voluptatibus unde, totam iste eaque voluptates. Voluptatibus voluptatem
+                        perferendis fuga nihil ab pariatur odit, beatae obcaecati perspiciatis dignissimos corporis
+                        laborum sequi quos illum laudantium mollitia magni animi.</p>
+                </div>
+            </div>
+        </div>
+        <!--Section 2, 3, and footer -- done with plain HTML and CSS-->
     </div>
     <!-- Bootstrap scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

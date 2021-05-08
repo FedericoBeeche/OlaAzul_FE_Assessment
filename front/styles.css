@@ -1,9 +1,19 @@
-.headerSection {
-    border: solid 2px red;
-    width: 100%;
+body {
+    background-color: oldlace;
+    border: solid 2px blue;
 }
 
-.section1 {
-    border: solid 2px blue;
-    width: 100%;
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+#headerSection {
+    border: solid 2px red;
+    height: 35vh;
+}
+
+#section1 {
+    border: solid 2px magenta;
+    height: 25vh;
 }
