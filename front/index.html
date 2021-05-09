@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="front/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" /> <!-- Slick Theme CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" /> <!-- Slick CSS -->
     <title>OlaAzul Marketing Front End Assessment</title>
 </head>
 
 <body>
     <!--main container-->
     <div>
-        <!--Header and secton 1 container -- done with Bootstrap -->
+        <!--Header -- done with Bootstrap -->
         <div class="container-fluid">
             <div id="headerSection" class="d-flex justify-content-center row">
                 <div class="col-12">
@@ -27,6 +33,7 @@
                     <button id="headerBtn" class="btn-dark py-3 px-4">Read More</button>
                 </div>
             </div>
+            <!-- Section 1 -- done with Bootstrap -->
             <div id="section1" class="d-flex justify-content-center row">
                 <div class="col-12">
                     <h2 class="d-flex justify-content-center font-weight-bold pt-4">Section 1</h2>
@@ -83,7 +90,8 @@
             <div class="colSize" id="section3_left">
                 <div>
                     <h3>Section 3</h3>
-                    <p class="parragraphSection3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur adipisci assumenda ipsam provident dignissimos magnam deserunt eaque maiores dolor nesciunt!
+                    <p class="parragraphSection3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                        adipisci assumenda ipsam provident dignissimos magnam deserunt eaque maiores dolor nesciunt!
                         <br>
                         <br>
                         contact@olaazul.net
@@ -93,10 +101,13 @@
             <div class="colSize" id="section3_right">
                 <div>
                     <h3>Section 3</h3>
-                    <p class="parragraphSection3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugit ipsa eveniet quis aliquam esse, veniam porro. Earum veniam vitae sequi asperiores. Tempora, asperiores sint?</p>
+                    <p class="parragraphSection3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                        fugit ipsa eveniet quis aliquam esse, veniam porro. Earum veniam vitae sequi asperiores.
+                        Tempora, asperiores sint?</p>
                 </div>
             </div>
         </div>
+        <!--Footer -- done with plain HTML and CSS-->
         <div class="HTMLsection" id="footer">
             <div class=" colSize">
                 <p>Creation date: Saturday, May 8<sup>th</sup>, 2021</p>
@@ -117,6 +128,48 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <!-- Slick scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous"></script> <!-- Slick JS -->
+    <script type="text/javascript">
+        $('.your-class').slick({
+            dots: true,
+            infinite: false,
+            speed: 2000,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                // {
+                //     breakpoint: 480,
+                //     settings: {
+                //         slidesToShow: 1,
+                //         slidesToScroll: 1
+                //     }
+                // }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
 </body>
 
 </html>
