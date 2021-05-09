@@ -26,6 +26,7 @@ body {
 #section1 {
     height: 27vh;
     background-color: #eaeaea;
+    overflow: scroll;
 }
 
 /* SECTION 2 STYLES */
@@ -103,4 +104,28 @@ div.column.colSize {
 #footer p {
     margin-bottom: 3vh;
     margin-top: 3vh;
+}
+
+/* MEDIA QUERIES FOR TABLET - 768px SCREENS */
+
+@media (max-width: 768px) {
+    .column:nth-child(3) {
+        display: none;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}
+
+/* MEDIA QUERIES FOR PHONE - 380px SCREENS */
+
+@media (max-width: 380px) {
+    .column:nth-child(2) {
+        display: none;
+    }
+
+    body {
+        font-size: 12px;
+    }
 }
