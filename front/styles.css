@@ -33,10 +33,21 @@ body {
 
 /* SECTION 2 STYLES */
 
-#section2 {
+.HTMLsection {
     border: solid 2px yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section2 {
     height: 65vh;
     background-color: #2c2c2c;
+}
+
+.column {
+    padding: 0;
+    margin: 1vh;
 }
 
 .card {
@@ -50,15 +61,29 @@ body {
   margin-top: 1vh;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+/* SECTION 3 STYLES */
+
+#section3 {
+    height: 35vh;
+    background-color: #eaeaea;
 }
 
-/* Clear floats */
-.section2::after {
-  content: "";
-  clear: both;
-  display: table;
+.colSize {
+    width: 50%;
+    text-align: center;
+}
+
+#section3_left {
+    background-color: #2590d4;
+}
+
+#section3_right {
+    background-color: #999999;
+}
+
+/* FOOTER STYLES */
+
+#footer {
+    background-color: #2c2c2c;
+    color: white;
 }
