@@ -26,7 +26,7 @@ body {
 #section1 {
     height: 27vh;
     background-color: #eaeaea;
-    overflow: scroll;
+    overflow: auto;
 }
 
 /* SECTION 2 STYLES */
