@@ -29,11 +29,15 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="d-flex justify-content-center row">
-                    <button onclick="changeclass()" class="btn-dark p-3 col-3 align-items-center" id="headerBtn">Have fun with me!</button>
+                    <h1 id="header">Header</h1>
+                    <span id="subHeader">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nihil nostrum
+                        nesciunt illo. Nulla totam praesentium tenetur quis ad recusandae?</span>
+                    <button onclick="changeclass()" class="btn-dark p-3 col-1 align-items-center" id="headerBtn">Click
+                        me?</button>
                 </div>
             </div>
             <div id="headerSection row">
-                <div class="col-12 sliderContainer mt-4">
+                <div oonchan class="col-12 sliderContainer mt-4">
                     <img src="https://i.ibb.co/Gkvt8Bc/1.jpg">
                     <img src="https://i.ibb.co/Y241r8N/2.jpg">
                     <img src="https://i.ibb.co/s2sLcQr/3.jpg">
@@ -41,6 +45,7 @@
                     <img src="https://i.ibb.co/D7WwX4Y/5.jpg">
                 </div>
             </div>
+
             <!-- Section 1 -- done with Bootstrap -->
             <div id="section1" class="d-flex justify-content-center row">
                 <div class="col-12">
@@ -126,6 +131,8 @@
             </div>
         </div>
     </div>
+    <!-- General JavaScript -->
+    <script src="front/index.js"></script>
     <!-- Bootstrap scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -163,28 +170,13 @@
                     }
                 },
                 {
-                    breakpoint: 380,
+                    breakpoint: 420,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
                     }
                 },
             ]
-        });
-    </script>
-    <!-- Add/Remove blur Slick -->
-    <script>
-        function changeclass() {
-            $(".sliderContainer,.sliderContainerNoBlur").toggleClass('sliderContainer').toggleClass('sliderContainerNoBlur');
-        } 
-    </script>
-    <!-- Scroll Reveal -->
-    <script type="text/javascript">
-        ScrollReveal().reveal('#section2, #section3, #section1, #card0, #card1, #card2', {
-            viewFactor: 0.5,
-            easing: 'ease-in',
-            useDelay: 'once',
-            interval: 150
         });
     </script>
 </body>

@@ -12,11 +12,32 @@ body {
     color: white;
 }
 
-#headerBtn {
+#header {
     position: absolute;
     margin-top: 5%;
+    z-index: 4;
+    color: white;
+    font-weight: bold;
+}
+
+#subHeader {
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 10%;
+    margin-right: 10%;
+    z-index: 4;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+#headerBtn {
+    position: absolute;
+    margin-top: 20%;
     border-radius: 5px;
     z-index: 4;
+    border: 1px solid white;
+    min-width: 20%;
 }
 
 /* SLICK STYLES */ 
@@ -38,7 +59,7 @@ body {
 
 .sliderContainer img {
     max-height: 600px;
-    filter: blur(12px)
+    filter: blur(20px);
 }
 
 .sliderContainerNoBlur img {
@@ -149,9 +170,9 @@ div.column.colSize {
     margin-top: 3vh;
 }
 
-/* MEDIA QUERIES FOR TABLET - 768px SCREENS */
+/* MEDIA QUERIES FOR TABLET - 780px SCREENS */
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .column:nth-child(3) {
         display: none;
     }
@@ -160,14 +181,26 @@ div.column.colSize {
         font-size: 16px;
     }
 
-    #headerBtn {
-        font-size: 12px;
+    #header {
+        display: none;
     }
-}
 
-/* MEDIA QUERIES FOR PHONE - 380px SCREENS */
+    #subHeader {
+        display: none;
+    }
 
-@media (max-width: 380px) {
+    #headerBtn {
+        position: relative;
+        margin-top: 5%;
+        border-radius: 5px;
+        z-index: 4;
+        font-size: 12px;
+        min-width: 100px;
+    }
+
+/* MEDIA QUERIES FOR PHONE - 420px SCREENS */
+
+@media (max-width: 420px) {
     .column:nth-child(2) {
         display: none;
     }
@@ -180,6 +213,15 @@ div.column.colSize {
         font-size: 18px;
     }
 
+    #header {
+        display: none;
+    }
+
+    #subHeader {
+        display: none;
+    }
+
+
     #headerBtn {
         position: relative;
         margin-top: 5%;
@@ -188,4 +230,5 @@ div.column.colSize {
         font-size: 12px;
         min-width: 100px;
     }
+}
 }
