@@ -27,8 +27,8 @@
     <div>
         <!--Header -- done with Bootstrap -->
         <div class="container-fluid">
-            <div id="headerSection row mt-2">
-                <div class="col-12 your-class">
+            <div id="headerSection row">
+                <div class="col-12 your-class mt-4">
                     <img src="https://i.ibb.co/Gkvt8Bc/1.jpg">
                     <img src="https://i.ibb.co/Y241r8N/2.jpg">
                     <img src="https://i.ibb.co/s2sLcQr/3.jpg">
@@ -58,7 +58,7 @@
         <!--Section 2 -- done with plain HTML and CSS-->
         <div class="HTMLsection" id="section2">
             <div class="column">
-                <div class="card">
+                <div class="card" id="card0">
                     <img src="https://picsum.photos/200" style="width:100%">
                     <div class="cardContainer">
                         <h4>Section 2</h4>
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="column">
-                <div class="card">
+                <div class="card" id="card1">
                     <img src="https://picsum.photos/200" style="width:100%">
                     <div class="cardContainer">
                         <h4>Section 2</h4>
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div class="column">
-                <div class="card">
+                <div class="card" id="card2">
                     <img src="https://picsum.photos/200" style="width:100%">
                     <div class="cardContainer">
                         <h4>Section 2</h4>
@@ -144,7 +144,7 @@
             autoplay: true,
             autoplaySpeed: 2000,
             infinite: true,
-            speed: 2000,
+            speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
             responsive: [
@@ -169,10 +169,11 @@
     </script>
     <!-- Scroll Reveal -->
     <script type="text/javascript">
-        ScrollReveal().reveal('#section2, #section3, #footer, #section1', { 
+        ScrollReveal().reveal('#section2, #section3, #footer, #section1, #card0, #card1, #card2', { 
             viewFactor: 0.5,
             easing: 'ease-in',
             useDelay: 'once',
+            interval: 150
         });
     </script>
 </body>
