@@ -27,8 +27,13 @@
     <div>
         <!--Header -- done with Bootstrap -->
         <div class="container-fluid">
+            <div class="container">
+                <div class="d-flex justify-content-center row">
+                    <button onclick="changeclass()" class="btn-dark p-3 col-3 align-items-center" id="headerBtn">Have fun with me!</button>
+                </div>
+            </div>
             <div id="headerSection row">
-                <div class="col-12 your-class mt-4">
+                <div class="col-12 sliderContainer mt-4">
                     <img src="https://i.ibb.co/Gkvt8Bc/1.jpg">
                     <img src="https://i.ibb.co/Y241r8N/2.jpg">
                     <img src="https://i.ibb.co/s2sLcQr/3.jpg">
@@ -138,7 +143,7 @@
         crossorigin="anonymous"></script> <!-- Slick JS -->
     <!-- Initialize Slick Slider -- 1 slide on desktop, 2 on tablet, and 1 on mobile -->
     <script type="text/javascript">
-        $('.your-class').slick({
+        $('.sliderContainer').slick({
             dots: true,
             arrows: true,
             autoplay: true,
@@ -167,9 +172,15 @@
             ]
         });
     </script>
+    <!-- Add/Remove blur Slick -->
+    <script>
+        function changeclass() {
+            $(".sliderContainer,.sliderContainerNoBlur").toggleClass('sliderContainer').toggleClass('sliderContainerNoBlur');
+        } 
+    </script>
     <!-- Scroll Reveal -->
     <script type="text/javascript">
-        ScrollReveal().reveal('#section2, #section3, #footer, #section1, #card0, #card1, #card2', { 
+        ScrollReveal().reveal('#section2, #section3, #section1, #card0, #card1, #card2', {
             viewFactor: 0.5,
             easing: 'ease-in',
             useDelay: 'once',

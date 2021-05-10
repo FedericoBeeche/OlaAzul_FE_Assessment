@@ -4,17 +4,19 @@ body {
     background-color: #2c2c2c;
 }
 
-.container {
-    margin: 0;
-    padding: 0;
-}
-
 /* HEADER STYLES */
 
 #headerSection {
     height: 57.97vh;
     background-color: #2c2c2c;
     color: white;
+}
+
+#headerBtn {
+    position: absolute;
+    margin-top: 5%;
+    border-radius: 5px;
+    z-index: 4;
 }
 
 /* SLICK STYLES */ 
@@ -34,7 +36,12 @@ body {
     color: white !important;
 }
 
-.your-class img {
+.sliderContainer img {
+    max-height: 600px;
+    filter: blur(12px)
+}
+
+.sliderContainerNoBlur img {
     max-height: 600px;
 }
 
@@ -152,6 +159,10 @@ div.column.colSize {
     body {
         font-size: 16px;
     }
+
+    #headerBtn {
+        font-size: 12px;
+    }
 }
 
 /* MEDIA QUERIES FOR PHONE - 380px SCREENS */
@@ -166,6 +177,15 @@ div.column.colSize {
     }
 
     div h3 {
-    font-size: 18px;
-}
+        font-size: 18px;
+    }
+
+    #headerBtn {
+        position: relative;
+        margin-top: 5%;
+        border-radius: 5px;
+        z-index: 4;
+        font-size: 12px;
+        min-width: 100px;
+    }
 }
