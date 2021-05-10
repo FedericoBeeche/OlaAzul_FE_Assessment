@@ -21,15 +21,13 @@
     <div>
         <!--Header -- done with Bootstrap -->
         <div class="container-fluid">
-            <div id="headerSection row">
+            <div id="headerSection row mt-2">
                 <div class="col-12 your-class">
-                    <img src="https://i.redd.it/gjftjzi975s01.jpg" alt="">
-                    <img src="https://i.redd.it/ew03wnmkrxuz.jpg" alt="">
-                    <img src="https://i.imgur.com/5f9NfZn.jpg" alt="">
-                    <img src="https://i.redd.it/dhau3sczgpa11.png" alt="">
-                    <img src="https://i.redd.it/zqug64uyc0sz.jpg" alt="">
-                    <img src="https://i.redd.it/ppwcy3zv3dvz.jpg" alt="">
-                    <img src="https://picsum.photos/seed/picsum/1920/600">
+                    <img src="https://i.ibb.co/Gkvt8Bc/1.jpg">
+                    <img src="https://i.ibb.co/Y241r8N/2.jpg">
+                    <img src="https://i.ibb.co/s2sLcQr/3.jpg">
+                    <img src="https://i.ibb.co/615WBMK/4.jpg">
+                    <img src="https://i.ibb.co/D7WwX4Y/5.jpg">
                 </div>
             </div>
             <!-- Section 1 -- done with Bootstrap -->
@@ -132,6 +130,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous"></script> <!-- Slick JS -->
+    <!-- Initialize Slick Slider -- 1 slide on desktop, 2 on tablet, and 1 on mobile -->
     <script type="text/javascript">
         $('.your-class').slick({
             dots: true,
@@ -139,11 +138,11 @@
             autoplay: false,
             infinite: true,
             speed: 2000,
-            slidesToShow: 3,
+            slidesToShow: 1,
             slidesToScroll: 1,
             responsive: [
                 {
-                    breakpoint: 768,
+                    breakpoint: 780,
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1,
@@ -158,16 +157,6 @@
                         slidesToScroll: 1
                     }
                 },
-                // {
-                //     breakpoint: 480,
-                //     settings: {
-                //         slidesToShow: 1,
-                //         slidesToScroll: 1
-                //     }
-                // }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
             ]
         });
     </script>
