@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" /> <!-- Slick CSS -->
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Scroll script that inits funcion - reset false = reveals just once -->
+    <script>
+        ScrollReveal({ reset: false });
+    </script>
     <title>OlaAzul Marketing Front End Assessment</title>
 </head>
 
@@ -135,7 +141,8 @@
         $('.your-class').slick({
             dots: true,
             arrows: true,
-            autoplay: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
             infinite: true,
             speed: 2000,
             slidesToShow: 1,
@@ -158,6 +165,14 @@
                     }
                 },
             ]
+        });
+    </script>
+    <!-- Scroll Reveal -->
+    <script type="text/javascript">
+        ScrollReveal().reveal('#section2, #section3, #footer, #section1', { 
+            viewFactor: 0.5,
+            easing: 'ease-in',
+            useDelay: 'once',
         });
     </script>
 </body>
